@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
+
 namespace WebStore.Pages
 {
     public class IndexModel : PageModel
@@ -25,10 +26,10 @@ namespace WebStore.Pages
         {
             if (String.IsNullOrWhiteSpace(UserName))
             {
-                UserName = "Please Create Account";
-
+                UserName = "";
             }
 
+           
         }
     }
 }

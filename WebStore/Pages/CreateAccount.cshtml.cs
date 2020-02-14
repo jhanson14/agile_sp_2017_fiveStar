@@ -19,13 +19,10 @@ namespace WebStore.Pages
 
         public IActionResult OnPost()
         {
-            if (ModelState.IsValid == false)
-            {
-                return Page();
-            }
-            // Save Account info to database
-
-
+            //if (ModelState.IsValid == false)
+            //{
+            //    return Page();
+            //}
             return RedirectToPage("/Index", new { Account.UserName });
         }
     }

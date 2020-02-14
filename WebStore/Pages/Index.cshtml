@@ -4,19 +4,36 @@
     ViewData["Title"] = "Home page";
 }
 
-    <div class="entire">
-        <section class="head">
-            <h1>Web Store</h1>
-            <h3>Shopping Simplified</h3>
-        </section>
+<div class="entire">
+    <section class="head">
+        <h1>Web Store</h1>
+        <h3>Shopping Simplified</h3>
+    </section>
 
-        <section>
-            <h4>Deal of the Day</h4>
-            <p>20% OFF</p>
-        </section>
-        <!-- <h1 class="display-4">Welcome @Model.UserName</h1>-->
-        <section>
-            <p>Welcome to Web Store! We suggest creating an <a href="Pages/CreatAccount.cshtml">account</a>! This will speed up the check-out process.</p>
-        </section>
-        <p>W</p>
-    </div>
+    <section>
+        <h4>Deal of the Day</h4>
+        <p>20% OFF</p>
+    </section>
+    <!-- <h1 class="display-4">Welcome @Model.UserName</h1>-->
+    <section>
+        @* easy if statement to show changes on a page depending on what was entered if there is no username it will tell them to login if there is it will greet them by the username from the form
+            we can use this same idea to show previous orders or reccomend items.*@
+
+
+        @if (String.IsNullOrWhiteSpace(Model.UserName))
+        {
+
+            @*have to use the asp tags to move pages instead of hrefs*@
+
+            <!--<p>Welcome to Web Store! We suggest creating an <a href="Pages/CreatAccount.cshtml">account</a>! This will speed up the check-out process.</p>*-->
+
+            <p>Welcome to Web Store! We suggest creating an <a asp-area="" asp-page="/CreateAccount">account.</a>This will speed up the check-out process.</p>
+        }
+        else
+        {
+            <p>Welcome to Web Store @Model.UserName</p>
+        }
+
+    </section>
+    <p>W</p>
+</div>

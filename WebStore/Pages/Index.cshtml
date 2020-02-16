@@ -2,20 +2,21 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    
 }
 
-<div class="entire">
+<body class="entire">
     <section class="head">
         <h1>Web Store</h1>
-        <h3>Shopping Simplified</h3>
+        <h4 id="shoppingSimple">Shopping Simplified</h4>
     </section>
 
-    <section>
-        <h4>Deal of the Day</h4>
+    <div class="deal">
+        <h5>Deal of the Day</h5>
         <p>20% OFF</p>
-    </section>
+    </div>
     <!-- <h1 class="display-4">Welcome @Model.UserName</h1>-->
-    <section>
+    <section class="welcome">
         @* easy if statement to show changes on a page depending on what was entered if there is no username it will tell them to login if there is it will greet them by the username from the form
             we can use this same idea to show previous orders or reccomend items.*@
 
@@ -35,5 +36,4 @@
         }
 
     </section>
-    <p>W</p>
-</div>
+</body>

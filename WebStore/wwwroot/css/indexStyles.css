@@ -1,0 +1,21 @@
+﻿.entire {
+    position: relative;
+    margin: 0 auto;
+    border: 15px solid #1a299c;
+}
+
+
+.head {
+    font-family: 'Avant Garde', 'Lucida San Console', Arial, 'Times New Roman';
+    position: relative;
+    margin: 15px auto;
+    border-bottom: 4px solid #1a267e;
+    left: -325px;
+}
+
+#shoppingSimple {
+    position: relative;
+    margin-bottom: -2px;
+    top: -8px;
+    left: 25px;
+}

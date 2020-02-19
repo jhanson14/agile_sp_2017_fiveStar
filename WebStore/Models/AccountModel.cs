@@ -1,8 +1,11 @@
 ﻿using System;
+
 namespace WebStore.Models
 {
     public class AccountModel
+
     {
+        public int id { get; set; }
         public String UserName { get; set; }
         public String Password { get; set; }
         public String FirstName { get; set; }

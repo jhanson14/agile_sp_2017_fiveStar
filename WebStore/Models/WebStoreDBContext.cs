@@ -17,7 +17,7 @@ namespace WebStore.Models
 		}
 
 		private MySqlConnection GetConnection() {
-			return new MySqlConnection(ConnenctionString);
+			return new MySqlConnection();
 
 
 		}

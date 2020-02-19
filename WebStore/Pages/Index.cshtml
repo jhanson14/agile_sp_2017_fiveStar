@@ -21,18 +21,18 @@
             we can use this same idea to show previous orders or reccomend items.*@
 
 
-        @if (String.IsNullOrWhiteSpace(Model.UserName))
+        @if (!User.Identity.IsAuthenticated)
         {
 
             @*have to use the asp tags to move pages instead of hrefs*@
 
             <!--<p>Welcome to Web Store! We suggest creating an <a href="Pages/CreatAccount.cshtml">account</a>! This will speed up the check-out process.</p>*-->
 
-            <p>Welcome to Web Store! We suggest creating an <a asp-area="" asp-page="/CreateAccount">account.</a>This will speed up the check-out process.</p>
+            <p>Welcome to Web Store! We suggest creating an <a asp-area="Identity" asp-page="/Account/Register">account.</a>This will speed up the check-out process.</p>
         }
         else
         {
-            <p>Welcome to Web Store @Model.UserName</p>
+            <p>Welcome to Web Store @User.Identity.Name</p>
         }
 
     </section>

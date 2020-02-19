@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 
 
 namespace WebStore.Models
@@ -16,8 +16,8 @@ namespace WebStore.Models
 			this.ConnectionString = connectionString;
 		}
 
-		private MySqlConnection GetConnection() {
-			return new MySqlConnection(ConnenctionString);
+		//private MySqlConnection GetConnection() {
+			//return new MySqlConnection();
 
 
 		}
@@ -26,4 +26,4 @@ namespace WebStore.Models
 
 
 	}
-}
+

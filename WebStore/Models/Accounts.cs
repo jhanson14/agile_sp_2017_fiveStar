@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace WebStore.Models
 {
-	public class Accounts
+	public class Accounts {
 
 
-			private WebStoreDBContext context;
-	public int Id { get; set; }
-	public string
-}
+		private WebStoreDBContext context;
+		public int Id { get; set; }
+
+    }
 }

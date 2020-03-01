@@ -10,8 +10,8 @@ using WebStore.Data;
 namespace WebStore.Migrations
 {
     [DbContext(typeof(WebStoreContext))]
-    [Migration("20200301195754_init")]
-    partial class init
+    [Migration("20200301211653_productTest")]
+    partial class productTest
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -253,7 +253,7 @@ namespace WebStore.Migrations
                         {
                             Id = 1,
                             Description = "Suited for light gaming and office use.",
-                            FilePath = "/ images / basicMonitor.jpg",
+                            FilePath = "/images/basicMonitor.jpg",
                             Genre = "test",
                             Name = "basic Monitor",
                             Price = 50.0

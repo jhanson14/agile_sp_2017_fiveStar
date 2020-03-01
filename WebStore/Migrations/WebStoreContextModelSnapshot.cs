@@ -251,7 +251,7 @@ namespace WebStore.Migrations
                         {
                             Id = 1,
                             Description = "Suited for light gaming and office use.",
-                            FilePath = "/ images / basicMonitor.jpg",
+                            FilePath = "/images/basicMonitor.jpg",
                             Genre = "test",
                             Name = "basic Monitor",
                             Price = 50.0

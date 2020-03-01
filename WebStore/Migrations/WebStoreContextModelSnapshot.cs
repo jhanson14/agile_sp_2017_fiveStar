@@ -230,6 +230,7 @@ namespace WebStore.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FilePath")
+                        .HasColumnName("FilePath")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Genre")
@@ -244,6 +245,17 @@ namespace WebStore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Suited for light gaming and office use.",
+                            FilePath = "/ images / basicMonitor.jpg",
+                            Genre = "test",
+                            Name = "basic Monitor",
+                            Price = 50.0
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

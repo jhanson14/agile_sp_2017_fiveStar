@@ -11,6 +11,8 @@ namespace WebStore
 {
     public class Startup
     {
+
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -50,9 +52,11 @@ namespace WebStore
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseAuthentication();
             app.UseAuthorization();
+
+
 
             app.UseEndpoints(endpoints =>
             {

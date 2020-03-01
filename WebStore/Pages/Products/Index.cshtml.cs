@@ -12,18 +12,15 @@ namespace WebStore
 {
     public class IndexModel : PageModel
     {
-        private readonly WebStore.Data.WebStoreContext _context;
+        private readonly WebStore.Data.WebStoreContext db;
 
-        public IndexModel(WebStore.Data.WebStoreContext context)
-        {
-            _context = context;
-        }
-
-        public IList<Products> Products { get;set; }
+        public IndexModel(WebStoreContext db) => this.db = db;
+        public List<Products> Products { get; set; } = new List<Products>();
 
         public async Task OnGetAsync()
         {
-            Products = await _context.Products.ToListAsync();
+            Products = await db.Products.ToListAsync();
+
         }
     }
 }

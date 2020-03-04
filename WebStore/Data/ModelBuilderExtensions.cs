@@ -23,7 +23,17 @@ namespace WebStore.Data
                     Price = 50,
                     Genre = "test",
                     FilePath = "/images/basicMonitor.jpg"
+                },
+                new Products
+                {
+                    Id = 2,
+                    Name = "basic Monitor",
+                    Description = "Suited for light gaming and office use.",
+                    Price = 50,
+                    Genre = "test",
+                    FilePath = "/images/basicMonitor.jpg"
                 }
+
         );
             return modelBuilder;
         }

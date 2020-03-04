@@ -2,11 +2,11 @@
 
 namespace WebStore
 {
-    public class AllProductsModel : PageModel
-    {
-        public void OnGet()
-        {
+	public class AllProductsModel : PageModel
+	{
+		public void OnGet()
+		{
 
-        }
-    }
+		}
+	}
 }

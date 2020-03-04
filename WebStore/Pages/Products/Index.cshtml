@@ -6,25 +6,30 @@
     Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
+<head runat="server">
+    <link rel="stylesheet" href="~/css/productStyles.css" type="text/css" />
+    <title>Products</title>
+</head>
+
 <h1>Products</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
 </p>
 <div id="productsWrapper">
-@foreach (var product in Model.Products)
-{
+    @foreach (var product in Model.Products)
+    {
 
-       <div class="col-sm-3">
-           <div>
-               <h3>@product.Name</h3>
-               <img class ="img-fluid" src="@product.FilePath" />
-               <p>
-                   @product.Description
-               </p>
-           </div>
+        <div class="col-sm-3">
+            <div>
+                <h3>@product.Name</h3>
+                <img class="img-fluid" src="@product.FilePath" />
+                <p>
+                    @product.Description
+                </p>
+            </div>
 
-       </div>
-}
-       </div>
+        </div>
+    }
+</div>
 

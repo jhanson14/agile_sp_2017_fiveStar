@@ -1,32 +1,32 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System;
 
 
 namespace WebStore.Pages
 {
-    public class IndexModel : PageModel
-    {
-        private readonly ILogger<IndexModel> _logger;
+	public class IndexModel : PageModel
+	{
+		private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
+		public IndexModel(ILogger<IndexModel> logger)
+		{
+			_logger = logger;
 
-        }
+		}
 
-        [BindProperty(SupportsGet = true)]
-        public String UserName { get; set; }
+		[BindProperty(SupportsGet = true)]
+		public String UserName { get; set; }
 
-        public void OnGet()
-        {
-            if (String.IsNullOrWhiteSpace(UserName))
-            {
-                UserName = "";
-            }
+		public void OnGet()
+		{
+			if (String.IsNullOrWhiteSpace(UserName))
+			{
+				UserName = "";
+			}
 
-           
-        }
-    }
+
+		}
+	}
 }

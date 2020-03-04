@@ -1,1 +1,55 @@
-﻿
+﻿.head {
+    position: relative;
+    float: left;
+    color: #313131;
+    padding: 10px;
+}
+
+.txt {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    color: #f1f1f1;
+    text-shadow: 2px 2px #302929;
+}
+
+
+h1 {
+    font-size: 45px;
+}
+
+h4 {
+    padding-top: 45px;
+    margin-left: 24px;
+    font-size: 30px;
+}
+
+
+a {
+    color: darkgrey;
+}
+
+.imgDesk {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    html {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 75px;
+    }
+
+    h4 {
+        padding-top: 70px;
+        margin-left: 24px;
+        font-size: 50px;
+    }
+}

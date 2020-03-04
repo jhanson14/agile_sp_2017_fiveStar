@@ -58,8 +58,8 @@ a {
     height: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto;*/
-}
+    margin-right: auto;
+}*/
 
 @media (min-width: 768px) {
   html {
@@ -76,8 +76,8 @@ a {
         margin-left: 24px;
         font-size: 50px;
     }
-
-}*/
+*/
+}
 
 
 

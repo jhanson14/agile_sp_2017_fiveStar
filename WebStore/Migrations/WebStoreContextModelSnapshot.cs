@@ -252,9 +252,180 @@ namespace WebStore.Migrations
                             Id = 1,
                             Description = "Suited for light gaming and office use.",
                             FilePath = "/images/basicMonitor.jpg",
-                            Genre = "test",
-                            Name = "basic Monitor",
+                            Genre = "Monitor",
+                            Name = "Basic Monitor",
                             Price = 50.0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "This monitor delivers superior quality for gaming.",
+                            FilePath = "/images/rgbaMonitor.jpg",
+                            Genre = "Monitor",
+                            Name = "RGB Monitor",
+                            Price = 200.0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Suited for light gaming and office use.",
+                            FilePath = "/images/basicKeyboard.jpg",
+                            Genre = "Keyboard",
+                            Name = "Basic Keyboard",
+                            Price = 20.0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "RGBA light capability. Suited for intense gaming.",
+                            FilePath = "/images/rgbaKeyboard.jpg",
+                            Genre = "Keyboard",
+                            Name = "RGBA Keyboard",
+                            Price = 90.0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Premium speakers. Perfect for the complete in home speaker system.",
+                            FilePath = "/images/rgbaSpeakers.jpg",
+                            Genre = "Speakers",
+                            Name = "A5+ Speakers",
+                            Price = 500.0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Great for small office sound.",
+                            FilePath = "/images/basicSpeakers.jpg",
+                            Genre = "Speakers",
+                            Name = "Basic Speakers",
+                            Price = 15.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Suited for light gaming and home use.",
+                            FilePath = "/images/basicHeadphones.jpg",
+                            Genre = "Headphones",
+                            Name = "Basic Headphones",
+                            Price = 15.0
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "RGB Capability. Suited for intense gaming and delivering superior sound.",
+                            FilePath = "/images/rgbHeadphone.jpg",
+                            Genre = "Headphones",
+                            Name = "RGB Headphones",
+                            Price = 150.0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Suited for light gaming and office use.",
+                            FilePath = "/images/basicMouse.jpg",
+                            Genre = "Mouse",
+                            Name = "Basic Mouse",
+                            Price = 14.0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "Perfect for low latency gameplay and plenty of gaming abuse. RGB!",
+                            FilePath = "/images/rgbaMouse.jpg",
+                            Genre = "Mouse",
+                            Name = "RGBA Mouse",
+                            Price = 90.0
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Suited for simple office use. Good for small day to day printing jobs.",
+                            FilePath = "/images/basicPrinter.jpg",
+                            Genre = "Printer",
+                            Name = "Basic Printer",
+                            Price = 25.0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Suited for heavy printer jobs. High ink efficiency.",
+                            FilePath = "/images/rgbaPrinter.jpg",
+                            Genre = "Printer",
+                            Name = "RGBA Printer",
+                            Price = 450.0
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Description = "Suited for small sound for a small office or a quiet living room.",
+                            FilePath = "/images/basicSoundbar.jpg",
+                            Genre = "Soundbar",
+                            Name = "Basic Soundbar",
+                            Price = 50.0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Description = "Fancy lights and big sound. Perfect for shaking a room to an explosion in a movie like Transformers.",
+                            FilePath = "/images/rgbaSoundbar.jpg",
+                            Genre = "Soundbar",
+                            Name = "RGBA Soundbar",
+                            Price = 500.0
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Description = "Takes lower resolution photos. Efficient on storage space.",
+                            FilePath = "/images/basicCamera.jpg",
+                            Genre = "Camera",
+                            Name = "Basic Camera",
+                            Price = 20.0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Description = "Super high resolution photos with a huge sensor to take in all the light and shadows of a shot.",
+                            FilePath = "/images/rgbaCamera.jpg",
+                            Genre = "Camera",
+                            Name = "RGBA Camera",
+                            Price = 41000.0
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Description = "Mediocre file transfer speed. Great bang for buck.",
+                            FilePath = "/images/basicFlashDrive.jpg",
+                            Genre = "Flashdrive",
+                            Name = "Basic Flashdrive",
+                            Price = 2.0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Description = "SuPeR cOoL RGB Bro! Fast files! Bro! Bro guy man! Dude!",
+                            FilePath = "/images/rgbaFlashDrive.jpg",
+                            Genre = "Flashdrive",
+                            Name = "RGBA Flash Drive",
+                            Price = 18.0
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Description = "Medium color gamut and good sound.",
+                            FilePath = "/images/basicTV.jpg",
+                            Genre = "TV",
+                            Name = "Basic TV",
+                            Price = 200.0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Description = "Super high nitz for a great brightness. Intense color gamut and plenty of sound..",
+                            FilePath = "/images/rgbaTV.jpg",
+                            Genre = "TV",
+                            Name = "RGBA TV",
+                            Price = 10000.0
                         });
                 });
 

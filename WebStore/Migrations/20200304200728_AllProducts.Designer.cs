@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebStore.Data;
 
 namespace WebStore.Migrations
 {
     [DbContext(typeof(WebStoreContext))]
-    partial class WebStoreContextModelSnapshot : ModelSnapshot
+    [Migration("20200304200728_AllProducts")]
+    partial class AllProducts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -269,7 +271,7 @@ namespace WebStore.Migrations
                         {
                             Id = 3,
                             Description = "Suited for light gaming and office use.",
-                            FilePath = "/images/basicKeyboard.png",
+                            FilePath = "/images/basicKeyboard.jpg",
                             Genre = "Keyboard",
                             Name = "Basic Keyboard",
                             Price = 20.0
@@ -359,7 +361,7 @@ namespace WebStore.Migrations
                         {
                             Id = 13,
                             Description = "Suited for small sound for a small office or a quiet living room.",
-                            FilePath = "/images/basicSoundbar.jpeg",
+                            FilePath = "/images/basicSoundbar.jpg",
                             Genre = "Soundbar",
                             Name = "Basic Soundbar",
                             Price = 50.0
@@ -368,7 +370,7 @@ namespace WebStore.Migrations
                         {
                             Id = 14,
                             Description = "Fancy lights and big sound. Perfect for shaking a room to an explosion in a movie like Transformers.",
-                            FilePath = "/images/rgbaSoundbar.jpeg",
+                            FilePath = "/images/rgbaSoundbar.jpg",
                             Genre = "Soundbar",
                             Name = "RGBA Soundbar",
                             Price = 500.0
@@ -377,7 +379,7 @@ namespace WebStore.Migrations
                         {
                             Id = 15,
                             Description = "Takes lower resolution photos. Efficient on storage space.",
-                            FilePath = "/images/basicCamera.jpeg",
+                            FilePath = "/images/basicCamera.jpg",
                             Genre = "Camera",
                             Name = "Basic Camera",
                             Price = 20.0
@@ -395,7 +397,7 @@ namespace WebStore.Migrations
                         {
                             Id = 17,
                             Description = "Mediocre file transfer speed. Great bang for buck.",
-                            FilePath = "/images/basicFlashDrive.jpeg",
+                            FilePath = "/images/basicFlashDrive.jpg",
                             Genre = "Flashdrive",
                             Name = "Basic Flashdrive",
                             Price = 2.0
@@ -422,7 +424,7 @@ namespace WebStore.Migrations
                         {
                             Id = 20,
                             Description = "Super high nitz for a great brightness. Intense color gamut and plenty of sound..",
-                            FilePath = "/images/rgbaTV.jpeg",
+                            FilePath = "/images/rgbaTV.jpg",
                             Genre = "TV",
                             Name = "RGBA TV",
                             Price = 10000.0

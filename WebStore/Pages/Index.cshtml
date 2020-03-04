@@ -2,22 +2,28 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    
+
 }
+
+<head runat="server">
+    <link rel="stylesheet" href="~/css/indexStyles.css" type="text/css" />
+    <title>Index</title>
+</head>
 
 <body class="entire">
     <section class="head">
         <h1 class="txt">Web Store</h1>
         <h4 class="txt">Advance Your Game</h4>
-        <img class="imgDesk" src="~/images/desk.jpg" alt="Computer desk with LED gaming keyboard"/>
+        <img class="imgDesk" src="~/images/desk.jpg" alt="Computer desk with LED gaming keyboard" />
     </section>
 
     @*<div class="deal">
-        <h5>Deal of the Day</h5>
-        <p>20% OFF</p>
-    </div>*@
+            <h5>Deal of the Day</h5>
+            <p>20% OFF</p>
+        </div>*@
     <!-- <h1 class="display-4">Welcome @Model.UserName</h1>-->
     <section class="welcome">
+
         @* easy if statement to show changes on a page depending on what was entered if there is no username it will tell them to login if there is it will greet them by the username from the form
             we can use this same idea to show previous orders or reccomend items.*@
 
@@ -29,14 +35,14 @@
 
             <!--<p>Welcome to Web Store! We suggest creating an <a href="Pages/CreatAccount.cshtml">account</a>! This will speed up the check-out process.</p>*-->
 
-            <p>Welcome to Web Store! We suggest creating an <a asp-area="" asp-page="/CreateAccount">account.</a>This will speed up the check-out process.</p>
-        }
-        else
-        {
-            <p>Welcome to Web Store @Model.UserName</p>
-        }
+        <p>Welcome to Web Store! We suggest creating an <a asp-area="" asp-page="/CreateAccount">account.</a>This will speed up the check-out process.</p>
+    }
+    else
+    {
+        <p>Welcome to Web Store @Model.UserName</p>
+    }
 
 
 
-    </section>
+</section>
 </body>

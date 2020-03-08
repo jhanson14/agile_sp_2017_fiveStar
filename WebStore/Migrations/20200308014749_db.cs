@@ -2,7 +2,7 @@
 
 namespace WebStore.Migrations
 {
-    public partial class productsadded : Migration
+    public partial class db : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

@@ -12,27 +12,45 @@
 </head>
 
 <h1>Products</h1>
-
-<p>
+@*<img src="~/images/codeLaptop.jpg" alt="Guy gaming with RGBA headset" />*@
+@*<p>
     <a asp-page="Create">Create New</a>
-</p>
-<div id="productsWrapper">
-    @foreach (var product in Model.Products)
-    {
+</p>*@
+<div class="container">
+        @foreach (var product in Model.Products)
+        {
 
-        <div class="col-sm-3">
-            <div>
-                <h3>@product.Name</h3>
-                <img class="img-fluid" src="@product.FilePath" />
-                <p>
-                    @product.Description
-                </p>
+            @*<div class="col">
+                <div>
+                    <h3>@product.Name</h3>
+                    <img class="img-fluid" src="@product.FilePath" />
+                    <p>
+                        @product.Price
 
-                <button type="submit" onclick="cartCounter()"> <i class="fas fa-cart-plus"></i> </button>
+                        @product.Description
+                    </p>
+                    <button type="submit" onclick="cartCounter()" id="productBtn"> <i class="fas fa-cart-plus"></i> </button>
+                </div>
+            </div>*@
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card text-center text-dark bg-light border-secondary mb-3" style="width: 25rem;">
+                            <img class="card-img-top" src="@product.FilePath">
+                            <div class="card-body">
+                                <h4 class="card-title">@product.Name</h4>
+                                <p class="card-text">Price: $@product.Price</p>
+                                
 
+                                <button @*href="@product.FilePath" data-name="@product.Name" data-price="@product.Price"*@  type="button" class="btn btn-success" onclick="cartCounter()">
+                                    <span class=""></span>
+                                Add to cart
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    }
             </div>
-
-        </div>
-    }
-</div>
-

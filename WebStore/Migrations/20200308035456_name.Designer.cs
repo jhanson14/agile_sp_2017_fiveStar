@@ -10,8 +10,8 @@ using WebStore.Data;
 namespace WebStore.Migrations
 {
     [DbContext(typeof(WebStoreContext))]
-    [Migration("20200308014749_db")]
-    partial class db
+    [Migration("20200308035456_name")]
+    partial class name
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

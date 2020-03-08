@@ -1,4 +1,14 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿// nav shopping cart counter
+var counter = 0;
 
-// Write your Javascript code.
+function cartCounter() {
+    counter += 1;
+    document.getElementById("shoppingCartNav").innerHTML = "(" + counter + ")";
+}
+
+// shopping cart button
+function checkoutBtn() {
+
+    alert("Thank you for your purchase! \n Expect your pekedge in 1 to 2 weeks.");
+
+}

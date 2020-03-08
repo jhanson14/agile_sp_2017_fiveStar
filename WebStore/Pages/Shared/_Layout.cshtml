@@ -6,8 +6,7 @@
     <title>@ViewData["Title"] - WebStore</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    @*<link rel="stylesheet" href="~/css/indexStyles.css" />
-    <link rel="stylesheet" href="~/css/productStyles.css"/>*@
+    <script src="~/js/site.js"></script>
     <script src="https://kit.fontawesome.com/d102db371c.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,11 +22,11 @@
                     <partial name="_LoginPartial"/>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Products/Index">Products</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/AllProducts">Products</a>
                         </li>
                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/ShoppingCart"><i class="fas fa-shopping-cart"></i> Cart</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ShoppingCart"><i class="fas fa-shopping-cart"></i> Cart <span id="shoppingCartNav"></span></a>
                         </li>
 
                     </ul>

@@ -12,9 +12,19 @@
 <h1>Shopping Cart</h1>
 
 
-<div class="shoppingCart">
-
-</div>
-
-<button class="btnCheckout" onclick="checkoutBtn()">Proceed to checkout</button>
+           <h5 class="title" id="Label">Cart</h5>
+                <button type="button" class="close"  aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            
+            <div class="body">
+                <table class="show-cart table">
+                </table>
+                <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="footer">
+                <button type="button" class="btn btn-primary" onclick="checkoutBtn()">Order now</button>
+                <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+     
 

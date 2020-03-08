@@ -19,19 +19,6 @@
 <div class="container">
         @foreach (var product in Model.Products)
         {
-
-            @*<div class="col">
-                <div>
-                    <h3>@product.Name</h3>
-                    <img class="img-fluid" src="@product.FilePath" />
-                    <p>
-                        @product.Price
-
-                        @product.Description
-                    </p>
-                    <button type="submit" onclick="cartCounter()" id="productBtn"> <i class="fas fa-cart-plus"></i> </button>
-                </div>
-            </div>*@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card text-center text-dark bg-light border-secondary mb-3" style="width: 25rem;">
@@ -42,9 +29,8 @@
                                 <p class="card-text">Price: $@product.Price</p>
                                 
 
-                                <button @*href="@product.FilePath" data-name="@product.Name" data-price="@product.Price"*@  type="button" class="btn btn-success" onclick="cartCounter()">
-                                    <span class=""></span>
-                                Add to cart
+                                <button href="@product.FilePath" data-name="@product.Name" data-price="@product.Price"  type="button" class="add-to-cart btn btn-success" @*onclick="cartCounter()"*@>
+                                    Add to cart
                                 </button>
 
 

@@ -10,8 +10,8 @@ using WebStore.Data;
 namespace WebStore.Migrations
 {
     [DbContext(typeof(WebStoreContext))]
-    [Migration("20200308035456_name")]
-    partial class name
+    [Migration("20200310232814_updatedProduts")]
+    partial class updatedProduts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -289,7 +289,7 @@ namespace WebStore.Migrations
                         {
                             Id = 5,
                             Description = "Premium speakers. Perfect for the complete in home speaker system.",
-                            FilePath = "/images/rgbaSpeakers.jpg",
+                            FilePath = "/images/rgbaSpeakers.jpeg",
                             Genre = "Speakers",
                             Name = "A5+ Speakers",
                             Price = 500.0
@@ -352,7 +352,7 @@ namespace WebStore.Migrations
                         {
                             Id = 12,
                             Description = "Suited for heavy printer jobs. High ink efficiency.",
-                            FilePath = "/images/rgbaPrinter.jpg",
+                            FilePath = "/images/rgbaPrinter.jpeg",
                             Genre = "Printer",
                             Name = "RGBA Printer",
                             Price = 450.0

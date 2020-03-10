@@ -59,7 +59,7 @@ namespace WebStore.Data
                         Description = "Premium speakers. Perfect for the complete in home speaker system.",
                         Price = 500,
                         Genre = "Speakers",
-                        FilePath = "/images/rgbaSpeakers.jpg"
+                        FilePath = "/images/rgbaSpeakers.jpeg"
                     },
 
                     new Products
@@ -129,7 +129,7 @@ namespace WebStore.Data
                         Description = "Suited for heavy printer jobs. High ink efficiency.",
                         Price = 450,
                         Genre = "Printer",
-                        FilePath = "/images/rgbaPrinter.jpg"
+                        FilePath = "/images/rgbaPrinter.jpeg"
                     },
 
                     new Products

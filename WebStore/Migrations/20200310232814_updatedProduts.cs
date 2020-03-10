@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebStore.Migrations
 {
-    public partial class name : Migration
+    public partial class updatedProduts : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -181,14 +181,14 @@ namespace WebStore.Migrations
                     { 15, "Takes lower resolution photos. Efficient on storage space.", "/images/basicCamera.jpeg", "Camera", "Basic Camera", 20.0 },
                     { 14, "Fancy lights and big sound. Perfect for shaking a room to an explosion in a movie like Transformers.", "/images/rgbaSoundbar.jpeg", "Soundbar", "RGBA Soundbar", 500.0 },
                     { 13, "Suited for small sound for a small office or a quiet living room.", "/images/basicSoundbar.jpeg", "Soundbar", "Basic Soundbar", 50.0 },
-                    { 12, "Suited for heavy printer jobs. High ink efficiency.", "/images/rgbaPrinter.jpg", "Printer", "RGBA Printer", 450.0 },
+                    { 12, "Suited for heavy printer jobs. High ink efficiency.", "/images/rgbaPrinter.jpeg", "Printer", "RGBA Printer", 450.0 },
                     { 11, "Suited for simple office use. Good for small day to day printing jobs.", "/images/basicPrinter.jpg", "Printer", "Basic Printer", 25.0 },
                     { 10, "Perfect for low latency gameplay and plenty of gaming abuse. RGB!", "/images/rgbaMouse.jpg", "Mouse", "RGBA Mouse", 90.0 },
                     { 9, "Suited for light gaming and office use.", "/images/basicMouse.jpg", "Mouse", "Basic Mouse", 14.0 },
                     { 8, "RGB Capability. Suited for intense gaming and delivering superior sound.", "/images/rgbHeadphone.jpg", "Headphones", "RGB Headphones", 150.0 },
                     { 7, "Suited for light gaming and home use.", "/images/basicHeadphones.jpg", "Headphones", "Basic Headphones", 15.0 },
                     { 6, "Great for small office sound.", "/images/basicSpeakers.jpg", "Speakers", "Basic Speakers", 15.0 },
-                    { 5, "Premium speakers. Perfect for the complete in home speaker system.", "/images/rgbaSpeakers.jpg", "Speakers", "A5+ Speakers", 500.0 },
+                    { 5, "Premium speakers. Perfect for the complete in home speaker system.", "/images/rgbaSpeakers.jpeg", "Speakers", "A5+ Speakers", 500.0 },
                     { 4, "RGBA light capability. Suited for intense gaming.", "/images/rgbaKeyboard.jpg", "Keyboard", "RGBA Keyboard", 90.0 },
                     { 3, "Suited for light gaming and office use.", "/images/basicKeyboard.png", "Keyboard", "Basic Keyboard", 20.0 },
                     { 2, "This monitor delivers superior quality for gaming.", "/images/rgbaMonitor.jpg", "Monitor", "RGB Monitor", 200.0 },

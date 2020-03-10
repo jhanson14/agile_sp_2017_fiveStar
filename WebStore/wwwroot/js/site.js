@@ -9,8 +9,8 @@ var counter = 0;
 // shopping cart button
 function checkoutBtn() {
 
-    alert("Thank you for your purchase! \n Expect your pekedge in 1 to 2 weeks.");
-
+        alert("Thank you for your purchase! \n Expect your pekedge in 1 to 2 weeks.");
+    
 }
 
 
@@ -49,6 +49,7 @@ var shoppingCart = (function () {
     //add to cart
     obj.addItemToCart = function (name, filePath, price, count) {
         for (var item in cart) {
+            window.alert(item.toString);
             if (cart[item].name === name) {
                 cart[item].count++;
                 saveCart();
@@ -164,7 +165,7 @@ function displayCart() {
     var output = "";
     for (var i in cartArray) {
         output += "<tr>"
-            + "<td>" + cartArray[i].filePath + "</td>"
+            + "<td><img src=/images" + cartArray[i].filePath + "/></td>"
             + "<td>" + cartArray[i].name + "</td>"
             + "<td>(" + cartArray[i].price + ")</td>"
             + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"

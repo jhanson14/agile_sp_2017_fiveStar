@@ -10,8 +10,8 @@ using WebStore.Data;
 namespace WebStore.Migrations
 {
     [DbContext(typeof(WebStoreContext))]
-    [Migration("20200310232814_updatedProduts")]
-    partial class updatedProduts
+    [Migration("20200311165713_name")]
+    partial class name
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

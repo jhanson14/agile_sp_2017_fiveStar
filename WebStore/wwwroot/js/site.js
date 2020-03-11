@@ -1,7 +1,7 @@
 ﻿// shopping cart button
 function checkoutBtn() {
 
-        alert("Thank you for your purchase! \n Expect your pekedge in 1 to 2 weeks.");
+        alert("Thank you for your purchase! \n Expect your package in 1 to 2 weeks.");
     
 }
 
@@ -156,9 +156,9 @@ function displayCart() {
     var output = "";
     for (var i in cartArray) {
         output += "<tr>"
-            + "<td><img src=" + cartArray[i].filePath + "></td>"
+            //+ "<td><div class='product-image'><img src='" + cartArray[i].filePath + "'</td > "  NOTE: The img filePath is undefined
             + "<td>" + cartArray[i].name + "</td>"
-            + "<td>(" + cartArray[i].price + ")</td>"
+            + "<td>($" + cartArray[i].price + " each)</td>"
             + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
             + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
             + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
@@ -169,7 +169,7 @@ function displayCart() {
     }
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
-    $('.shoppingCartNav').html("(" + shoppingCart.totalCount() + ")"); //second counter
+    $('.shoppingCartNav').html("(" + shoppingCart.totalCount() + ")"); 
 }
 
 // Delete item button

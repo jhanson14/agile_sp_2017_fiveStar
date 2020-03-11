@@ -17,27 +17,29 @@
     <a asp-page="Create">Create New</a>
 </p>*@
 <div class="container">
+    <div class="row">
         @foreach (var product in Model.Products)
         {
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card text-center text-dark bg-light border-secondary mb-3" style="width: 25rem;">
-                            <img class="card-img-top" src="@product.FilePath">
-                            <div class="card-body">
-                                <h4 class="card-title">@product.Name</h4>
-                                <p class="card-text">@product.Description</p>
-                                <p class="card-text">Price: $@product.Price</p>
-                                
 
-                                <button href="@product.FilePath" data-name="@product.Name" data-price="@product.Price"  type="button" class="add-to-cart btn btn-success" @*onclick="cartCounter()"*@>
-                                    Add to cart
-                                </button>
+            <div class="col-sm-6">
+                <div class="card text-center text-dark bg-light border-secondary mb-3" style="width: 25rem;">
+                    <img class="card-img-top" src="@product.FilePath">
+                    <div class="card-body">
+                        <h4 class="card-title">@product.Name</h4>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text">Price: $@product.Price</p>
 
 
-                            </div>
-                        </div>
+                        <button href="@product.FilePath" data-name="@product.Name" data-price="@product.Price" type="button" class="add-to-cart btn btn-success" @*onclick="cartCounter()"*@>
+                            Add to cart
+                        </button>
+
+
                     </div>
                 </div>
-
-                    }
             </div>
+
+
+        }
+    </div>
+</div>

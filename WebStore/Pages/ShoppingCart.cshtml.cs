@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WebStore
 {
-    [Authorize]
+    //[Authorize]
     public class ShoppingCartModel : PageModel
     {
 
